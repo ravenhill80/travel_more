@@ -1,0 +1,643 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: "Josefin Sans SemiBold";
+  src: url("../assets/fonts/Josefin_Sans/JosefinSans-SemiBold.ttf"); }
+@font-face {
+  font-family: "Josefin Sans Light";
+  src: url("../assets/fonts/Josefin_Sans/JosefinSans-Light.ttf"); }
+@font-face {
+  font-family: "Aleo Regular";
+  src: url("../assets/fonts/Aleo/aleo-regular-webfont.woff2"); }
+.content {
+  max-width: 1800px;
+  border: 15px solid #fff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+.header {
+  background-image: url("../assets/images/header.png");
+  background-repeat: no-repeat;
+  background-size: auto; }
+
+.header__content-block {
+  padding-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  .header__content-block p:nth-of-type(1) {
+    font-family: "Josefin Sans SemiBold";
+    font-size: 48px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .header__content-block p:nth-of-type(2) {
+    font-family: "Josefin Sans Light";
+    font-size: 20px;
+    letter-spacing: 4px;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 50px; }
+  .header__content-block p:nth-of-type(3) {
+    font-family: "Josefin Sans Light";
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 120px; }
+
+.header__content-block__search {
+  min-height: 60px;
+  max-width: 650px;
+  border: 2px solid #fff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 767px) {
+    .header__content-block__search {
+      margin: 0 100px;
+      border: none; } }
+
+.header__content-block__search__search-field {
+  width: 496px;
+  min-height: 56px;
+  border: none; }
+  .header__content-block__search__search-field:focus {
+    outline: none; }
+
+button {
+  width: 150px;
+  min-height: 60px;
+  background-color: #5373fc;
+  display: flex;
+  align-items: center;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Aleo Regular";
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  button span {
+    width: 70px;
+    margin-left: 34px; }
+  button:focus {
+    outline: none; }
+  button:hover {
+    background-color: #839bff; }
+
+@media screen and (max-width: 767px) {
+  .header__content-block__search__submit-button {
+    margin: 3px; } }
+@media screen and (max-width: 460px) {
+  .header__content-block__search__submit-button {
+    justify-content: center;
+    min-height: 40px;
+    margin-top: 10px;
+    text-transform: lowercase; }
+    .header__content-block__search__submit-button span {
+      margin: 0; } }
+
+.header__content-block__search__submit-button__search-glass {
+  margin-top: 8px;
+  margin-left: 8px; }
+  .header__content-block__search__submit-button__search-glass img {
+    width: 25px; }
+  @media screen and (max-width: 460px) {
+    .header__content-block__search__submit-button__search-glass {
+      display: none; } }
+
+.header__content-block__arrow-down {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  .header__content-block__arrow-down img {
+    margin-top: -9px;
+    width: 35px;
+    transform: rotate(90deg); }
+
+.header__menu {
+  background-color: #5373fc;
+  height: 88px;
+  margin-top: 8%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left; }
+  @media screen and (max-width: 991px) {
+    .header__menu {
+      justify-content: center; } }
+  @media screen and (max-width: 575px) {
+    .header__menu {
+      height: auto; } }
+  .header__menu p:nth-of-type(1) {
+    font-family: "Josefin Sans SemiBold";
+    font-size: 24px;
+    letter-spacing: 2;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    width: 44%;
+    margin-right: 100px;
+    margin-left: 35px; }
+    @media screen and (max-width: 1366px) {
+      .header__menu p:nth-of-type(1) {
+        margin: 0; } }
+    @media screen and (max-width: 1199px) {
+      .header__menu p:nth-of-type(1) {
+        width: 250px;
+        text-align: left;
+        margin-left: 30px; } }
+    @media screen and (max-width: 991px) {
+      .header__menu p:nth-of-type(1) {
+        display: none; } }
+  .header__menu p {
+    width: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Aleo Regular";
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase; }
+    @media screen and (max-width: 575px) {
+      .header__menu p {
+        width: 100%;
+        margin-top: 20px; } }
+
+.info-block {
+  max-width: 540px;
+  margin-top: 11%;
+  margin-left: 330px; }
+  @media screen and (max-width: 1024px) {
+    .info-block {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center; } }
+  .info-block p:nth-of-type(1) {
+    font-family: "Aleo Regular";
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+    text-align: left; }
+    @media screen and (max-width: 767px) {
+      .info-block p:nth-of-type(1) {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; } }
+  .info-block p:nth-of-type(2) {
+    font-family: "Josefin Sans Light";
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    color: #e8e8e8;
+    text-transform: none;
+    text-align: left; }
+    @media screen and (max-width: 767px) {
+      .info-block p:nth-of-type(2) {
+        margin-left: 10px;
+        margin-right: 10px; } }
+  .info-block p:nth-of-type(3) {
+    font-family: "Josefin Sans Light";
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    text-align: left;
+    text-transform: none;
+    margin-bottom: 50px; }
+    @media screen and (max-width: 767px) {
+      .info-block p:nth-of-type(3) {
+        margin-left: 10px;
+        margin-right: 10px; } }
+
+.why-choose-us {
+  background-image: url("../assets/images/why_choose_us.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: flex;
+  min-height: 685px;
+  border-top: 1px solid #5373fc; }
+
+.why-choose-us__info-block {
+  max-width: 540px;
+  margin-top: 11%;
+  margin-left: 330px; }
+  @media screen and (max-width: 1366px) {
+    .why-choose-us__info-block {
+      margin-left: 0; } }
+  @media screen and (max-width: 1024px) {
+    .why-choose-us__info-block {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center; } }
+  .why-choose-us__info-block p:nth-of-type(1) {
+    font-family: "Aleo Regular";
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+    text-align: left; }
+    @media screen and (max-width: 767px) {
+      .why-choose-us__info-block p:nth-of-type(1) {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; } }
+  .why-choose-us__info-block p:nth-of-type(2) {
+    font-family: "Josefin Sans Light";
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    color: #e8e8e8;
+    text-transform: none;
+    text-align: left; }
+    @media screen and (max-width: 767px) {
+      .why-choose-us__info-block p:nth-of-type(2) {
+        margin-left: 10px;
+        margin-right: 10px; } }
+  .why-choose-us__info-block p:nth-of-type(3) {
+    font-family: "Josefin Sans Light";
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    text-align: left;
+    text-transform: none;
+    margin-bottom: 50px; }
+    @media screen and (max-width: 767px) {
+      .why-choose-us__info-block p:nth-of-type(3) {
+        margin-left: 10px;
+        margin-right: 10px; } }
+
+.why-choose-us__info-block__button {
+  margin: 0;
+  width: 226px; }
+  .why-choose-us__info-block__button span {
+    width: 226px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  @media screen and (max-width: 767px) {
+    .why-choose-us__info-block__button {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center; } }
+
+.why-choose-us__images {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 105px;
+  margin-top: 120px;
+  width: 475px;
+  left: 0; }
+  .why-choose-us__images img:nth-of-type(2) {
+    padding-left: 125px; }
+  @media screen and (max-width: 1024px) {
+    .why-choose-us__images {
+      display: none; } }
+
+.why-choose-us__icons {
+  background-color: #333;
+  min-height: 340px;
+  border-top: 1px solid #333; }
+  @media screen and (max-width: 991px) {
+    .why-choose-us__icons {
+      min-height: 250px; } }
+  .why-choose-us__icons__icons-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .why-choose-us__icons__icons-container__icon-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      @media screen and (max-width: 1199px) {
+        .why-choose-us__icons__icons-container__icon-row {
+          justify-content: space-around; } }
+      .why-choose-us__icons__icons-container__icon-row img {
+        margin-top: 100px; }
+        @media screen and (max-width: 991px) {
+          .why-choose-us__icons__icons-container__icon-row img {
+            margin-top: 50px; } }
+    .why-choose-us__icons__icons-container__text-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 30px; }
+      .why-choose-us__icons__icons-container__text-row p {
+        max-width: 380px;
+        font-family: "Aleo Regular";
+        font-size: 36px;
+        letter-spacing: 0;
+        line-height: 26px;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        text-transform: capitalize;
+        width: 40%; }
+        @media screen and (max-width: 767px) {
+          .why-choose-us__icons__icons-container__text-row p {
+            line-height: 25px;
+            font-size: 24px; } }
+  .why-choose-us__icons__rainbow {
+    margin-top: 50px;
+    width: 320px;
+    height: 110px;
+    opacity: 50%;
+    border-top: 1px dotted #fff;
+    border-radius: 50%; }
+    @media screen and (max-width: 1199px) {
+      .why-choose-us__icons__rainbow {
+        display: none; } }
+
+.booking {
+  display: flex;
+  flex-direction: column; }
+  .booking__book-now {
+    display: flex;
+    min-height: 700px;
+    background-position-x: 50%; }
+    .booking__book-now--1 {
+      background-image: url("../assets/images/house.png");
+      background-repeat: no-repeat;
+      background-size: auto; }
+      .booking__book-now--1__info-block {
+        background-color: #232323;
+        opacity: 90%;
+        padding: 45px 30px;
+        margin-top: 230px;
+        height: 370px; }
+        .booking__book-now--1__info-block p:nth-of-type(1) {
+          font-family: "Josefin Sans Light";
+          font-size: 18px;
+          letter-spacing: 0;
+          line-height: 26px;
+          color: #fff;
+          text-align: center;
+          text-transform: capitalize;
+          text-transform: none;
+          text-align: left;
+          color: #e8e8e8;
+          margin-bottom: 25px; }
+          @media screen and (max-width: 767px) {
+            .booking__book-now--1__info-block p:nth-of-type(1) {
+              margin-left: auto;
+              margin-right: auto;
+              text-align: center; } }
+        .booking__book-now--1__info-block p:nth-of-type(2) {
+          font-family: "Josefin Sans Light";
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 26px;
+          color: #fff;
+          text-align: center;
+          text-transform: capitalize;
+          margin-bottom: 20px;
+          text-transform: uppercase;
+          text-align: left; }
+          @media screen and (max-width: 767px) {
+            .booking__book-now--1__info-block p:nth-of-type(2) {
+              margin-left: 10px;
+              margin-right: 10px; } }
+        .booking__book-now--1__info-block p:nth-of-type(3) {
+          font-family: "Josefin Sans Light";
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 26px;
+          color: #fff;
+          text-align: center;
+          text-transform: capitalize;
+          text-align: left;
+          text-transform: none;
+          color: #e8e8e8;
+          margin-bottom: 40px; }
+          @media screen and (max-width: 767px) {
+            .booking__book-now--1__info-block p:nth-of-type(3) {
+              margin-left: 10px;
+              margin-right: 10px; } }
+        @media screen and (max-width: 1366px) {
+          .booking__book-now--1__info-block {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center; } }
+        @media screen and (max-width: 575px) {
+          .booking__book-now--1__info-block {
+            height: 430px; } }
+    .booking__book-now--2 {
+      background-image: url("../assets/images/mountains.png");
+      background-repeat: no-repeat;
+      background-size: auto;
+      justify-content: flex-end; }
+      .booking__book-now--2__info-block {
+        background-color: #232323;
+        opacity: 90%;
+        padding: 45px 30px;
+        margin-top: 230px;
+        height: 370px;
+        margin-right: 330px; }
+        .booking__book-now--2__info-block p:nth-of-type(1) {
+          font-family: "Josefin Sans Light";
+          font-size: 18px;
+          letter-spacing: 0;
+          line-height: 26px;
+          color: #fff;
+          text-align: center;
+          text-transform: capitalize;
+          text-transform: none;
+          text-align: left;
+          color: #e8e8e8;
+          margin-bottom: 25px; }
+          @media screen and (max-width: 767px) {
+            .booking__book-now--2__info-block p:nth-of-type(1) {
+              margin-left: auto;
+              margin-right: auto;
+              text-align: center; } }
+        .booking__book-now--2__info-block p:nth-of-type(2) {
+          font-family: "Josefin Sans Light";
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 26px;
+          color: #fff;
+          text-align: center;
+          text-transform: capitalize;
+          margin-bottom: 20px;
+          text-transform: uppercase;
+          text-align: left; }
+          @media screen and (max-width: 767px) {
+            .booking__book-now--2__info-block p:nth-of-type(2) {
+              margin-left: 10px;
+              margin-right: 10px; } }
+        .booking__book-now--2__info-block p:nth-of-type(3) {
+          font-family: "Josefin Sans Light";
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 26px;
+          color: #fff;
+          text-align: center;
+          text-transform: capitalize;
+          text-align: left;
+          text-transform: none;
+          color: #e8e8e8;
+          margin-bottom: 40px; }
+          @media screen and (max-width: 767px) {
+            .booking__book-now--2__info-block p:nth-of-type(3) {
+              margin-left: 10px;
+              margin-right: 10px; } }
+        @media screen and (max-width: 1366px) {
+          .booking__book-now--2__info-block {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center; } }
+        @media screen and (max-width: 575px) {
+          .booking__book-now--2__info-block {
+            height: 430px; } }
+
+.tourists {
+  background-image: url("../assets/images/tourists.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-height: 730px;
+  border-top: 1px solid #2d2f30;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media screen and (max-width: 1199px) {
+    .tourists {
+      background-size: cover; } }
+  .tourists p:nth-of-type(1) {
+    margin-top: 120px;
+    margin-bottom: 95px;
+    font-family: "Aleo Regular";
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-transform: capitalize; }
+    @media screen and (max-width: 575px) {
+      .tourists p:nth-of-type(1) {
+        font-family: "Aleo Regular";
+        font-size: 28px;
+        letter-spacing: 0;
+        line-height: 26px;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        text-transform: capitalize; } }
+  .tourists__tourist {
+    max-width: 1165px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    @media screen and (max-width: 575px) {
+      .tourists__tourist img {
+        width: 300px; } }
+    .tourists__tourist__review {
+      max-width: 670px;
+      padding: 50px;
+      background-color: #333; }
+      .tourists__tourist__review p:nth-of-type(1) {
+        font-family: "Josefin Sans Light";
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 26px;
+        color: #fff;
+        text-align: center;
+        text-transform: capitalize;
+        color: #fefefe;
+        text-transform: uppercase;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 35px; }
+      .tourists__tourist__review p:nth-of-type(2) {
+        font-family: "Josefin Sans Light";
+        font-size: 15px;
+        letter-spacing: 0;
+        line-height: 26px;
+        color: #fff;
+        text-align: center;
+        text-transform: capitalize;
+        text-align: left;
+        text-transform: none; }
+
+.footer {
+  background-color: #232323;
+  min-height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .footer p:nth-of-type(1) {
+    font-family: "Josefin Sans Light";
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px; }
+  .footer p:nth-of-type(2) {
+    margin-top: 3px;
+    font-family: "Josefin Sans Light";
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize; }
+  .footer__socials {
+    margin-top: 25px;
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
