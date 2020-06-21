@@ -408,8 +408,7 @@ button {
       background-repeat: no-repeat;
       background-size: auto; }
       .booking__book-now--1__info-block {
-        background-color: #232323;
-        opacity: 90%;
+        background-color: rgba(34, 33, 33, 0.85);
         padding: 45px 30px;
         margin-top: 230px;
         height: 370px; }
@@ -475,8 +474,7 @@ button {
       background-size: auto;
       justify-content: flex-end; }
       .booking__book-now--2__info-block {
-        background-color: #232323;
-        opacity: 90%;
+        background-color: rgba(34, 33, 33, 0.85);
         padding: 45px 30px;
         margin-top: 230px;
         height: 370px;
@@ -608,7 +606,7 @@ button {
         text-transform: none; }
 
 .footer {
-  background-color: #232323;
+  background-color: rgba(34, 33, 33, 0.85);
   min-height: 270px;
   display: flex;
   flex-direction: column;
